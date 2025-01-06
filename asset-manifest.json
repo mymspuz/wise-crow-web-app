@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/wise-crow-web-app/static/css/main.7a085b1b.css",
+    "main.js": "/wise-crow-web-app/static/js/main.982de05f.js",
+    "index.html": "/wise-crow-web-app/index.html",
+    "main.7a085b1b.css.map": "/wise-crow-web-app/static/css/main.7a085b1b.css.map",
+    "main.982de05f.js.map": "/wise-crow-web-app/static/js/main.982de05f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7a085b1b.css",
+    "static/js/main.982de05f.js"
+  ]
+}
