@@ -1,5 +1,5 @@
 import React from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, HashRouter } from 'react-router-dom'
 
 import Header from './components/Header/Header'
 import TaskSelectionForm from './components/TaskSelectionForm/TaskSelectionForm'
@@ -10,11 +10,13 @@ function App() {
     return (
         <div className="App">
             <Header />
-            <Routes>
-                <Route path={'/TaskSelection'} element={<TaskSelectionForm />} />
-                <Route path={'/TaskCompletion'} element={<TaskCompletionForm />} />
-                <Route path={'/UsersRights'} element={<UsersRightsForm />} />
-            </Routes>
+            <HashRouter>
+                <Routes>
+                    <Route path={'/TaskSelection'} element={<TaskSelectionForm />} />
+                    <Route path={'/TaskCompletion'} element={<TaskCompletionForm />} />
+                    <Route path={'/UsersRights'} element={<UsersRightsForm />} />
+                </Routes>
+            </HashRouter>
         </div>
     )
 }
