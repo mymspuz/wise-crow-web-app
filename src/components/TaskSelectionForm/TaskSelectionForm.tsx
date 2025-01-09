@@ -66,9 +66,9 @@ const TaskSelectionForm = () => {
             <hr/>
             <p>
                 {listTasksRemote.map(task => (
-                    <>
+                    <p>
                         <input key={task.id} id={task.id} type='checkbox' defaultChecked={false} onChange={onChangeRemoteTasks} />{task.content}
-                    </>
+                    </p>
                 ))}
             </p>
         </div>
