@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/wise-crow-web-app/static/css/main.7a085b1b.css",
-    "main.js": "/wise-crow-web-app/static/js/main.473aba47.js",
+    "main.js": "/wise-crow-web-app/static/js/main.bd2c696c.js",
     "index.html": "/wise-crow-web-app/index.html",
     "main.7a085b1b.css.map": "/wise-crow-web-app/static/css/main.7a085b1b.css.map",
-    "main.473aba47.js.map": "/wise-crow-web-app/static/js/main.473aba47.js.map"
+    "main.bd2c696c.js.map": "/wise-crow-web-app/static/js/main.bd2c696c.js.map"
   },
   "entrypoints": [
     "static/css/main.7a085b1b.css",
-    "static/js/main.473aba47.js"
+    "static/js/main.bd2c696c.js"
   ]
 }
