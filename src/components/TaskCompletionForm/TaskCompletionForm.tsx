@@ -90,7 +90,7 @@ const TaskCompletionForm = () => {
         tg.MainButton.setParams({
             text: 'Отправить данные'
         })
-        axios.get<IResponseTask>(`https://195.68.140.114/tasks/my/${userId}`)
+        axios.get<IResponseTask>(`http://195.68.140.114:3001/tasks/my/${userId}`)
             .then((response) => {
                 if (response.status === 200) {
                     const myTasks: IMyTasks[] = [{ id: 0, assortName: 'Выберите задачу', stageName: '', needTo: 0, price: 0, priority: 0, remote: false, made: 0, defect: 0, refuse: false }]
