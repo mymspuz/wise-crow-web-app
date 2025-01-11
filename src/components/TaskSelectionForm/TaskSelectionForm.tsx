@@ -54,7 +54,7 @@ const TaskSelectionForm = () => {
         tg.MainButton.setParams({
             text: 'Отправить данные'
         })
-        axios.get<IResponseTask>(`https://195.68.140.114:3001/tasks/${userId}`)
+        axios.get<IResponseTask>(`http://195.68.140.114:3001/tasks/${userId}`)
             .then((response) => {
                 if (response.status === 200) {
                     const tasks: { id: string, content: string }[] = [{ id: '0', content: 'Выберите задачу' }]
