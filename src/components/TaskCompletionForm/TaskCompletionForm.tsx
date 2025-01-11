@@ -1,5 +1,6 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
+import axios from 'axios'
 
 import { useTelegram } from '../../hooks/useTelegram'
 import './TaskCompletionForm.css'
@@ -17,13 +18,20 @@ interface IMyTasks {
     refuse: boolean
 }
 
+interface IResponseTask {
+    status: boolean
+    error: string
+    tasks: IMyTasks[]
+}
+
 const TaskCompletionForm = () => {
     const { tg } = useTelegram()
     const [search, setSearch] = useSearchParams();
     const [listTasks, setListTasks] = useState<IMyTasks[]>([])
     const [task, setTask] = useState<IMyTasks>({} as IMyTasks)
-    const tasks = search.get('tasks');
+    const userId = search.get('userId')
     const [taskId, setTaskId] = useState<number>(0)
+    const [error, setError] = useState<{ status: boolean, msg: string }>({ status: true, msg: 'Получение данных' })
 
     const checkData = () => {
         for (const itemTask of listTasks ) {
@@ -82,15 +90,24 @@ const TaskCompletionForm = () => {
         tg.MainButton.setParams({
             text: 'Отправить данные'
         })
-        const list: IMyTasks[] = tasks ? JSON.parse(tasks) : []
-        list.map(l => {
-            l.made = 0
-            l.defect = 0
-            l.refuse = false
-            return l
-        })
-        list.unshift({ id: 0, assortName: 'Выберите задачу', stageName: '', needTo: 0, price: 0, priority: 0, remote: false, made: 0, defect: 0, refuse: false })
-        setListTasks(list)
+        axios.get<IResponseTask>(`http://localhost:3001/tasks/my/${userId}`)
+            .then((response) => {
+                if (response.status === 200) {
+                    const myTasks: IMyTasks[] = [{ id: 0, assortName: 'Выберите задачу', stageName: '', needTo: 0, price: 0, priority: 0, remote: false, made: 0, defect: 0, refuse: false }]
+                    response.data.tasks.forEach(t => {
+                        myTasks.push(t)
+                    })
+                    setListTasks(myTasks)
+                    setError({ status: false, msg: '' })
+                } else {
+                    console.log('response - ', response)
+                    setError({ status: false, msg: response.data.error ? response.data.error : response.statusText })
+                }
+            })
+            .catch((error) => {
+                console.log('error - ', error.message)
+                setError({ status: true, msg: error.message })
+            })
     }, [])
 
     useEffect(() => {
@@ -111,46 +128,52 @@ const TaskCompletionForm = () => {
 
     return (
         <div className={"form"}>
-            <select value={taskId} onChange={onChangeTasks} className={'select'}>
-                {listTasks.map(task => (
-                    <option key={task.id} value={task.id}>{`${task.assortName} [${task.stageName}]`}</option>
-                ))}
-            </select>
-            <hr/>
-            {taskId !== 0 && task && task.id === taskId
+            {error.status
                 ?
-                <>
-                    <p>Нужно было сделать {task.needTo}</p>
-                    <div>
-                        <input
-                            className={'input'}
-                            type="number"
-                            placeholder={'Количество сделанных'}
-                            value={task.made}
-                            onChange={onChangeMade}
-                            min={0}
-                        />
-                    </div>
-                    <div>
-                        <input
-                            className={'input'}
-                            type="number"
-                            placeholder={'Количество брака'}
-                            value={task.defect}
-                            onChange={onChangeDefect}
-                            min={0}
-                        />
-                    </div>
-                    <div>
-                        <input type='checkbox' className={'checkbox'} onChange={onChangeRefuseTask} checked={task.refuse}/>Освободить задачу
-                    </div>
-                </>
+                <h3>{error.msg}</h3>
                 :
-                <p>Не выбрана задача</p>
+                <>
+                    <select value={taskId} onChange={onChangeTasks} className={'select'}>
+                        {listTasks.map(task => (
+                            <option key={task.id} value={task.id}>{`${task.assortName} ${task.stageName ? "[" + task.stageName + "]" : ""}`}</option>
+                        ))}
+                    </select>
+                    <hr/>
+                    {taskId !== 0 && task && task.id === taskId
+                        ?
+                        <>
+                            <p>Нужно было сделать {task.needTo}</p>
+                            <div>
+                                <input
+                                    className={'input'}
+                                    type="number"
+                                    placeholder={'Количество сделанных'}
+                                    value={task.made}
+                                    onChange={onChangeMade}
+                                    min={0}
+                                />
+                            </div>
+                            <div>
+                                <input
+                                    className={'input'}
+                                    type="number"
+                                    placeholder={'Количество брака'}
+                                    value={task.defect}
+                                    onChange={onChangeDefect}
+                                    min={0}
+                                />
+                            </div>
+                            <div>
+                                <input type='checkbox' className={'checkbox'} onChange={onChangeRefuseTask} checked={task.refuse}/>Освободить задачу
+                            </div>
+                        </>
+                        :
+                        <p>Не выбрана задача</p>
+                    }
+                </>
             }
         </div>
-    );
-
+    )
 }
 
 export default TaskCompletionForm
