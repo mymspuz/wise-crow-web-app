@@ -33,6 +33,8 @@ const TaskCompletionForm = () => {
     const [taskId, setTaskId] = useState<number>(0)
     const [error, setError] = useState<{ status: boolean, msg: string }>({ status: true, msg: 'Получение данных' })
 
+    const localTasks: any = require('../../data/tasks.json')
+
     const checkData = () => {
         for (const itemTask of listTasks ) {
             if (itemTask.refuse) return true
@@ -90,24 +92,22 @@ const TaskCompletionForm = () => {
         tg.MainButton.setParams({
             text: 'Отправить данные'
         })
-        axios.get<IResponseTask>(`http://195.68.140.114:3001/tasks/my/${userId}`)
-            .then((response) => {
-                if (response.status === 200) {
-                    const myTasks: IMyTasks[] = [{ id: 0, assortName: 'Выберите задачу', stageName: '', needTo: 0, price: 0, priority: 0, remote: false, made: 0, defect: 0, refuse: false }]
-                    response.data.tasks.forEach(t => {
-                        myTasks.push(t)
-                    })
-                    setListTasks(myTasks)
-                    setError({ status: false, msg: '' })
-                } else {
-                    console.log('response - ', response)
-                    setError({ status: false, msg: response.data.error ? response.data.error : response.statusText })
-                }
-            })
-            .catch((error) => {
-                console.log('error - ', error.message)
-                setError({ status: true, msg: error.message })
-            })
+        // axios.get<IResponseTask>(`https://195.68.140.114:3001/tasks/my/${userId}`)
+        //     .then((response) => {
+        //         if (response.status === 200) {
+        //             const myTasks: IMyTasks[] = [{ id: 0, assortName: 'Выберите задачу', stageName: '', needTo: 0, price: 0, priority: 0, remote: false, made: 0, defect: 0, refuse: false }]
+        //             response.data.tasks.forEach(t => {
+        //                 myTasks.push(t)
+        //             })
+        //             setListTasks(myTasks)
+        //             setError({ status: false, msg: '' })
+        //         } else {
+        //             setError({ status: false, msg: response.data.error ? response.data.error : response.statusText })
+        //         }
+        //     })
+        //     .catch((error) => {
+        //         setError({ status: true, msg: error.message })
+        //     })
     }, [])
 
     useEffect(() => {

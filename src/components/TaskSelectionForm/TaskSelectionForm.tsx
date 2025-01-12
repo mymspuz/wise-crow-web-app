@@ -26,9 +26,12 @@ const TaskSelectionForm = () => {
     const { tg } = useTelegram()
     const [search, setSearch] = useSearchParams()
     const userId = search.get('userId')
+    const localTaskId = search.get('tasks')
     const [listTasks, setListTasks] = useState<{ id: string, content: string }[]>([])
     const [listTasksRemote, setListTasksRemote] = useState<{ id: string, content: string }[]>([])
     const [error, setError] = useState<{ status: boolean, msg: string }>({ status: true, msg: 'Получение данных' })
+
+    const localTasks: ITask[] = require('../../data/tasks.json')
 
     const checkData = (): boolean => {
         return Number(taskId) > 0 || taskRemoteIds.length > 0
@@ -54,25 +57,43 @@ const TaskSelectionForm = () => {
         tg.MainButton.setParams({
             text: 'Отправить данные'
         })
-        axios.get<IResponseTask>(`http://195.68.140.114:3001/tasks/${userId}`)
-            .then((response) => {
-                if (response.status === 200) {
-                    const tasks: { id: string, content: string }[] = [{ id: '0', content: 'Выберите задачу' }]
-                    const tasksRemote: { id: string, content: string }[] = []
-                    response.data.tasks.forEach(t => {
-                        const temp = { id: `${t.id}`, content: `${t.assortName} [${t.stageName}] ${t.needTo} шт. ${t.price} руб.` }
-                        t.remote === 1 ? tasksRemote.push(temp) : tasks.push(temp)
-                    })
-                    setListTasks(tasks)
-                    setListTasksRemote(tasksRemote)
-                    setError({ status: false, msg: '' })
-                } else {
-                    setError({ status: false, msg: response.data.error ? response.data.error : response.statusText })
-                }
-            })
-            .catch((error) => {
-                setError({ status: true, msg: error.message })
-            })
+
+        // Временное решение
+        const tempTasks = JSON.parse(localTaskId ? localTaskId : '')
+        const tasks: { id: string, content: string }[] = [{ id: '0', content: 'Выберите задачу' }]
+        const tasksRemote: { id: string, content: string }[] = []
+        Object.keys(tempTasks).forEach(t => {
+            const temp = { id: ``, content: `Неизвестно [] ${tempTasks[t]} шт. 0 руб.` }
+            const localFind = localTasks.filter(lt => lt.id === Number(t))
+            if (localFind.length) {
+                temp.id = `${localFind[0].id}`
+                temp.content = `${localFind[0].assortName} [${localFind[0].stageName}] ${tempTasks[t]} шт. ${localFind[0].price} руб.`
+                localFind[0].remote === 1 ? tasksRemote.push(temp) : tasks.push(temp)
+            }
+        })
+        setListTasks(tasks)
+        setListTasksRemote(tasksRemote)
+        setError({ status: false, msg: '' })
+
+        // axios.get<IResponseTask>(`https://195.68.140.114:3001/tasks/${userId}`)
+        //     .then((response) => {
+        //         if (response.status === 200) {
+        //             const tasks: { id: string, content: string }[] = [{ id: '0', content: 'Выберите задачу' }]
+        //             const tasksRemote: { id: string, content: string }[] = []
+        //             response.data.tasks.forEach(t => {
+        //                 const temp = { id: `${t.id}`, content: `${t.assortName} [${t.stageName}] ${t.needTo} шт. ${t.price} руб.` }
+        //                 t.remote === 1 ? tasksRemote.push(temp) : tasks.push(temp)
+        //             })
+        //             setListTasks(tasks)
+        //             setListTasksRemote(tasksRemote)
+        //             setError({ status: false, msg: '' })
+        //         } else {
+        //             setError({ status: false, msg: response.data.error ? response.data.error : response.statusText })
+        //         }
+        //     })
+        //     .catch((error) => {
+        //         setError({ status: true, msg: error.message })
+        //     })
     }, [])
 
     useEffect(() => {

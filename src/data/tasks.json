@@ -1,0 +1,2466 @@
+[
+  {
+    "id": 20,
+    "assortName": "ОДД коричневая",
+    "stageName": "Вырубить",
+    "needTo": 20,
+    "price": 20,
+    "remote": 0
+  },
+  {
+    "id": 21,
+    "assortName": "ОДД коричневая",
+    "stageName": "Заготовить",
+    "needTo": 0,
+    "price": 30,
+    "remote": 0
+  },
+  {
+    "id": 22,
+    "assortName": "ОДД коричневая",
+    "stageName": "Крестики",
+    "needTo": 0,
+    "price": 20,
+    "remote": 0
+  },
+  {
+    "id": 23,
+    "assortName": "ОДД коричневая",
+    "stageName": "Склеить",
+    "needTo": 0,
+    "price": 50,
+    "remote": 0
+  },
+  {
+    "id": 24,
+    "assortName": "ОДД коричневая",
+    "stageName": "Обтачить урезы",
+    "needTo": 0,
+    "price": 60,
+    "remote": 0
+  },
+  {
+    "id": 25,
+    "assortName": "ОДД коричневая",
+    "stageName": "Прошить",
+    "needTo": 0,
+    "price": 150,
+    "remote": 1
+  },
+  {
+    "id": 26,
+    "assortName": "ОДД коричневая",
+    "stageName": "Полировка урезов",
+    "needTo": 0,
+    "price": 50,
+    "remote": 0
+  },
+  {
+    "id": 27,
+    "assortName": "ОДД коричневая",
+    "stageName": "Упаковать",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 28,
+    "assortName": "ОДД серая",
+    "stageName": "Вырубить",
+    "needTo": 20,
+    "price": 20,
+    "remote": 0
+  },
+  {
+    "id": 29,
+    "assortName": "ОДД серая",
+    "stageName": "Заготовить",
+    "needTo": 0,
+    "price": 30,
+    "remote": 0
+  },
+  {
+    "id": 30,
+    "assortName": "ОДД серая",
+    "stageName": "Крестики",
+    "needTo": 0,
+    "price": 20,
+    "remote": 0
+  },
+  {
+    "id": 31,
+    "assortName": "ОДД серая",
+    "stageName": "Склеить",
+    "needTo": 0,
+    "price": 50,
+    "remote": 0
+  },
+  {
+    "id": 32,
+    "assortName": "ОДД серая",
+    "stageName": "Обтачить урезы",
+    "needTo": 0,
+    "price": 60,
+    "remote": 0
+  },
+  {
+    "id": 33,
+    "assortName": "ОДД серая",
+    "stageName": "Прошить",
+    "needTo": 0,
+    "price": 150,
+    "remote": 1
+  },
+  {
+    "id": 34,
+    "assortName": "ОДД серая",
+    "stageName": "Полировка урезов",
+    "needTo": 0,
+    "price": 50,
+    "remote": 0
+  },
+  {
+    "id": 35,
+    "assortName": "ОДД серая",
+    "stageName": "Упаковать",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 36,
+    "assortName": "ОДД синяя",
+    "stageName": "Вырубить",
+    "needTo": 10,
+    "price": 20,
+    "remote": 0
+  },
+  {
+    "id": 37,
+    "assortName": "ОДД синяя",
+    "stageName": "Заготовить",
+    "needTo": 0,
+    "price": 30,
+    "remote": 0
+  },
+  {
+    "id": 38,
+    "assortName": "ОДД синяя",
+    "stageName": "Крестики",
+    "needTo": 0,
+    "price": 20,
+    "remote": 0
+  },
+  {
+    "id": 39,
+    "assortName": "ОДД синяя",
+    "stageName": "Склеить",
+    "needTo": 0,
+    "price": 50,
+    "remote": 0
+  },
+  {
+    "id": 40,
+    "assortName": "ОДД синяя",
+    "stageName": "Обтачить урезы",
+    "needTo": 0,
+    "price": 60,
+    "remote": 0
+  },
+  {
+    "id": 41,
+    "assortName": "ОДД синяя",
+    "stageName": "Прошить",
+    "needTo": 0,
+    "price": 150,
+    "remote": 1
+  },
+  {
+    "id": 42,
+    "assortName": "ОДД синяя",
+    "stageName": "Полировка урезов",
+    "needTo": 0,
+    "price": 50,
+    "remote": 0
+  },
+  {
+    "id": 43,
+    "assortName": "ОДД синяя",
+    "stageName": "Упаковать",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 44,
+    "assortName": "ОДД зеленая",
+    "stageName": "Вырубить",
+    "needTo": 10,
+    "price": 20,
+    "remote": 0
+  },
+  {
+    "id": 45,
+    "assortName": "ОДД зеленая",
+    "stageName": "Заготовить",
+    "needTo": 0,
+    "price": 30,
+    "remote": 0
+  },
+  {
+    "id": 46,
+    "assortName": "ОДД зеленая",
+    "stageName": "Крестики",
+    "needTo": 0,
+    "price": 20,
+    "remote": 0
+  },
+  {
+    "id": 47,
+    "assortName": "ОДД зеленая",
+    "stageName": "Склеить",
+    "needTo": 0,
+    "price": 50,
+    "remote": 0
+  },
+  {
+    "id": 48,
+    "assortName": "ОДД зеленая",
+    "stageName": "Обтачить урезы",
+    "needTo": 0,
+    "price": 60,
+    "remote": 0
+  },
+  {
+    "id": 49,
+    "assortName": "ОДД зеленая",
+    "stageName": "Прошить",
+    "needTo": 0,
+    "price": 150,
+    "remote": 1
+  },
+  {
+    "id": 50,
+    "assortName": "ОДД зеленая",
+    "stageName": "Полировка урезов",
+    "needTo": 0,
+    "price": 50,
+    "remote": 0
+  },
+  {
+    "id": 51,
+    "assortName": "ОДД зеленая",
+    "stageName": "Упаковать",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 52,
+    "assortName": "ОДД бирюза",
+    "stageName": "Вырубить",
+    "needTo": 10,
+    "price": 20,
+    "remote": 0
+  },
+  {
+    "id": 53,
+    "assortName": "ОДД бирюза",
+    "stageName": "Заготовить",
+    "needTo": 0,
+    "price": 30,
+    "remote": 0
+  },
+  {
+    "id": 54,
+    "assortName": "ОДД бирюза",
+    "stageName": "Крестики",
+    "needTo": 0,
+    "price": 20,
+    "remote": 0
+  },
+  {
+    "id": 55,
+    "assortName": "ОДД бирюза",
+    "stageName": "Склеить",
+    "needTo": 0,
+    "price": 50,
+    "remote": 0
+  },
+  {
+    "id": 56,
+    "assortName": "ОДД бирюза",
+    "stageName": "Обтачить урезы",
+    "needTo": 0,
+    "price": 60,
+    "remote": 0
+  },
+  {
+    "id": 57,
+    "assortName": "ОДД бирюза",
+    "stageName": "Прошить",
+    "needTo": 0,
+    "price": 150,
+    "remote": 1
+  },
+  {
+    "id": 58,
+    "assortName": "ОДД бирюза",
+    "stageName": "Полировка урезов",
+    "needTo": 0,
+    "price": 50,
+    "remote": 0
+  },
+  {
+    "id": 59,
+    "assortName": "ОДД бирюза",
+    "stageName": "Упаковать",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 60,
+    "assortName": "ОДД лайм",
+    "stageName": "Вырубить",
+    "needTo": 10,
+    "price": 20,
+    "remote": 0
+  },
+  {
+    "id": 61,
+    "assortName": "ОДД лайм",
+    "stageName": "Заготовить",
+    "needTo": 0,
+    "price": 30,
+    "remote": 0
+  },
+  {
+    "id": 62,
+    "assortName": "ОДД лайм",
+    "stageName": "Крестики",
+    "needTo": 0,
+    "price": 20,
+    "remote": 1
+  },
+  {
+    "id": 63,
+    "assortName": "ОДД лайм",
+    "stageName": "Склеить",
+    "needTo": 0,
+    "price": 50,
+    "remote": 0
+  },
+  {
+    "id": 64,
+    "assortName": "ОДД лайм",
+    "stageName": "Обтачить урезы",
+    "needTo": 0,
+    "price": 60,
+    "remote": 0
+  },
+  {
+    "id": 65,
+    "assortName": "ОДД лайм",
+    "stageName": "Прошить",
+    "needTo": 0,
+    "price": 150,
+    "remote": 1
+  },
+  {
+    "id": 66,
+    "assortName": "ОДД лайм",
+    "stageName": "Полировка урезов",
+    "needTo": 0,
+    "price": 50,
+    "remote": 0
+  },
+  {
+    "id": 67,
+    "assortName": "ОДД лайм",
+    "stageName": "Упаковать",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 68,
+    "assortName": "ОДД красная",
+    "stageName": "Вырубить",
+    "needTo": 10,
+    "price": 20,
+    "remote": 0
+  },
+  {
+    "id": 69,
+    "assortName": "ОДД красная",
+    "stageName": "Заготовить",
+    "needTo": 0,
+    "price": 30,
+    "remote": 0
+  },
+  {
+    "id": 70,
+    "assortName": "ОДД красная",
+    "stageName": "Крестики",
+    "needTo": 0,
+    "price": 20,
+    "remote": 0
+  },
+  {
+    "id": 71,
+    "assortName": "ОДД красная",
+    "stageName": "Склеить",
+    "needTo": 0,
+    "price": 50,
+    "remote": 0
+  },
+  {
+    "id": 72,
+    "assortName": "ОДД красная",
+    "stageName": "Обтачить урезы",
+    "needTo": 0,
+    "price": 60,
+    "remote": 0
+  },
+  {
+    "id": 73,
+    "assortName": "ОДД красная",
+    "stageName": "Прошить",
+    "needTo": 0,
+    "price": 150,
+    "remote": 1
+  },
+  {
+    "id": 74,
+    "assortName": "ОДД красная",
+    "stageName": "Полировка урезов",
+    "needTo": 0,
+    "price": 50,
+    "remote": 0
+  },
+  {
+    "id": 75,
+    "assortName": "ОДД красная",
+    "stageName": "Упаковать",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 76,
+    "assortName": "ОДД бордо",
+    "stageName": "Вырубить",
+    "needTo": 10,
+    "price": 20,
+    "remote": 0
+  },
+  {
+    "id": 77,
+    "assortName": "ОДД бордо",
+    "stageName": "Заготовить",
+    "needTo": 0,
+    "price": 30,
+    "remote": 0
+  },
+  {
+    "id": 78,
+    "assortName": "ОДД бордо",
+    "stageName": "Крестики",
+    "needTo": 0,
+    "price": 20,
+    "remote": 0
+  },
+  {
+    "id": 79,
+    "assortName": "ОДД бордо",
+    "stageName": "Склеить",
+    "needTo": 0,
+    "price": 50,
+    "remote": 0
+  },
+  {
+    "id": 80,
+    "assortName": "ОДД бордо",
+    "stageName": "Обтачить урезы",
+    "needTo": 0,
+    "price": 60,
+    "remote": 0
+  },
+  {
+    "id": 81,
+    "assortName": "ОДД бордо",
+    "stageName": "Прошить",
+    "needTo": 0,
+    "price": 150,
+    "remote": 1
+  },
+  {
+    "id": 82,
+    "assortName": "ОДД бордо",
+    "stageName": "Полировка урезов",
+    "needTo": 0,
+    "price": 50,
+    "remote": 0
+  },
+  {
+    "id": 83,
+    "assortName": "ОДД бордо",
+    "stageName": "Упаковать",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 84,
+    "assortName": "ОДД табак",
+    "stageName": "Вырубить",
+    "needTo": 20,
+    "price": 20,
+    "remote": 0
+  },
+  {
+    "id": 85,
+    "assortName": "ОДД табак",
+    "stageName": "Заготовить",
+    "needTo": 0,
+    "price": 30,
+    "remote": 0
+  },
+  {
+    "id": 86,
+    "assortName": "ОДД табак",
+    "stageName": "Крестики",
+    "needTo": 0,
+    "price": 20,
+    "remote": 0
+  },
+  {
+    "id": 87,
+    "assortName": "ОДД табак",
+    "stageName": "Склеить",
+    "needTo": 0,
+    "price": 50,
+    "remote": 0
+  },
+  {
+    "id": 88,
+    "assortName": "ОДД табак",
+    "stageName": "Обтачить урезы",
+    "needTo": 0,
+    "price": 60,
+    "remote": 0
+  },
+  {
+    "id": 89,
+    "assortName": "ОДД табак",
+    "stageName": "Прошить",
+    "needTo": 0,
+    "price": 150,
+    "remote": 1
+  },
+  {
+    "id": 90,
+    "assortName": "ОДД табак",
+    "stageName": "Полировка урезов",
+    "needTo": 0,
+    "price": 50,
+    "remote": 0
+  },
+  {
+    "id": 91,
+    "assortName": "ОДД табак",
+    "stageName": "Упаковать",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 92,
+    "assortName": "Кошелек коричневый",
+    "stageName": "Вырубить",
+    "needTo": 20,
+    "price": 20,
+    "remote": 0
+  },
+  {
+    "id": 93,
+    "assortName": "Кошелек коричневый",
+    "stageName": "Заготовить",
+    "needTo": 0,
+    "price": 50,
+    "remote": 0
+  },
+  {
+    "id": 94,
+    "assortName": "Кошелек коричневый",
+    "stageName": "Собрать полностью",
+    "needTo": 0,
+    "price": 300,
+    "remote": 1
+  },
+  {
+    "id": 95,
+    "assortName": "Кошелек коричневый",
+    "stageName": "Упаковать",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 96,
+    "assortName": "Кошелек серый",
+    "stageName": "Вырубить",
+    "needTo": 20,
+    "price": 20,
+    "remote": 0
+  },
+  {
+    "id": 97,
+    "assortName": "Кошелек серый",
+    "stageName": "Заготовить",
+    "needTo": 0,
+    "price": 50,
+    "remote": 0
+  },
+  {
+    "id": 98,
+    "assortName": "Кошелек серый",
+    "stageName": "Собрать полностью",
+    "needTo": 0,
+    "price": 300,
+    "remote": 1
+  },
+  {
+    "id": 99,
+    "assortName": "Кошелек серый",
+    "stageName": "Упаковать",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 100,
+    "assortName": "Кошелек синий",
+    "stageName": "Вырубить",
+    "needTo": 10,
+    "price": 20,
+    "remote": 0
+  },
+  {
+    "id": 101,
+    "assortName": "Кошелек синий",
+    "stageName": "Заготовить",
+    "needTo": 0,
+    "price": 50,
+    "remote": 0
+  },
+  {
+    "id": 102,
+    "assortName": "Кошелек синий",
+    "stageName": "Собрать полностью",
+    "needTo": 0,
+    "price": 300,
+    "remote": 1
+  },
+  {
+    "id": 103,
+    "assortName": "Кошелек синий",
+    "stageName": "Упаковать",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 104,
+    "assortName": "Кошелек зеленый",
+    "stageName": "Вырубить",
+    "needTo": 10,
+    "price": 20,
+    "remote": 0
+  },
+  {
+    "id": 105,
+    "assortName": "Кошелек зеленый",
+    "stageName": "Заготовить",
+    "needTo": 0,
+    "price": 50,
+    "remote": 0
+  },
+  {
+    "id": 106,
+    "assortName": "Кошелек зеленый",
+    "stageName": "Собрать полностью",
+    "needTo": 0,
+    "price": 300,
+    "remote": 1
+  },
+  {
+    "id": 107,
+    "assortName": "Кошелек зеленый",
+    "stageName": "Упаковать",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 108,
+    "assortName": "Кошелек бирюза",
+    "stageName": "Вырубить",
+    "needTo": 10,
+    "price": 20,
+    "remote": 0
+  },
+  {
+    "id": 109,
+    "assortName": "Кошелек бирюза",
+    "stageName": "Заготовить",
+    "needTo": 0,
+    "price": 50,
+    "remote": 0
+  },
+  {
+    "id": 110,
+    "assortName": "Кошелек бирюза",
+    "stageName": "Собрать полностью",
+    "needTo": 0,
+    "price": 300,
+    "remote": 1
+  },
+  {
+    "id": 111,
+    "assortName": "Кошелек бирюза",
+    "stageName": "Упаковать",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 112,
+    "assortName": "Кошелек табак",
+    "stageName": "Вырубить",
+    "needTo": 10,
+    "price": 20,
+    "remote": 0
+  },
+  {
+    "id": 113,
+    "assortName": "Кошелек табак",
+    "stageName": "Заготовить",
+    "needTo": 0,
+    "price": 50,
+    "remote": 0
+  },
+  {
+    "id": 114,
+    "assortName": "Кошелек табак",
+    "stageName": "Собрать полностью",
+    "needTo": 0,
+    "price": 300,
+    "remote": 1
+  },
+  {
+    "id": 115,
+    "assortName": "Кошелек табак",
+    "stageName": "Упаковать",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 116,
+    "assortName": "Мини коричневый",
+    "stageName": "Вырубить",
+    "needTo": 10,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 117,
+    "assortName": "Мини коричневый",
+    "stageName": "Заготовить",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 118,
+    "assortName": "Мини коричневый",
+    "stageName": "Собрать полностью",
+    "needTo": 0,
+    "price": 200,
+    "remote": 1
+  },
+  {
+    "id": 119,
+    "assortName": "Мини коричневый",
+    "stageName": "Упаковать",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 120,
+    "assortName": "мини серый",
+    "stageName": "Вырубить",
+    "needTo": 10,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 121,
+    "assortName": "мини серый",
+    "stageName": "Заготовить",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 122,
+    "assortName": "мини серый",
+    "stageName": "Собрать полностью",
+    "needTo": 0,
+    "price": 200,
+    "remote": 1
+  },
+  {
+    "id": 123,
+    "assortName": "мини серый",
+    "stageName": "Упаковать",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 124,
+    "assortName": "мини зеленый",
+    "stageName": "Вырубить",
+    "needTo": 10,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 125,
+    "assortName": "мини зеленый",
+    "stageName": "Заготовить",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 126,
+    "assortName": "мини зеленый",
+    "stageName": "Собрать полностью",
+    "needTo": 0,
+    "price": 200,
+    "remote": 1
+  },
+  {
+    "id": 127,
+    "assortName": "мини зеленый",
+    "stageName": "Упаковать",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 128,
+    "assortName": "мини бирюза",
+    "stageName": "Вырубить",
+    "needTo": 10,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 129,
+    "assortName": "мини бирюза",
+    "stageName": "Заготовить",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 130,
+    "assortName": "мини бирюза",
+    "stageName": "Собрать полностью",
+    "needTo": 0,
+    "price": 200,
+    "remote": 1
+  },
+  {
+    "id": 131,
+    "assortName": "мини бирюза",
+    "stageName": "Упаковать",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 132,
+    "assortName": "мини лайм",
+    "stageName": "Вырубить",
+    "needTo": 10,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 133,
+    "assortName": "мини лайм",
+    "stageName": "Заготовить",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 134,
+    "assortName": "мини лайм",
+    "stageName": "Собрать полностью",
+    "needTo": 0,
+    "price": 200,
+    "remote": 1
+  },
+  {
+    "id": 135,
+    "assortName": "мини лайм",
+    "stageName": "Упаковать",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 136,
+    "assortName": "мини красный",
+    "stageName": "Вырубить",
+    "needTo": 10,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 137,
+    "assortName": "мини красный",
+    "stageName": "Заготовить",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 138,
+    "assortName": "мини красный",
+    "stageName": "Собрать полностью",
+    "needTo": 0,
+    "price": 200,
+    "remote": 1
+  },
+  {
+    "id": 139,
+    "assortName": "мини красный",
+    "stageName": "Упаковать",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 140,
+    "assortName": "мини бордо",
+    "stageName": "Вырубить",
+    "needTo": 10,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 141,
+    "assortName": "мини бордо",
+    "stageName": "Заготовить",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 142,
+    "assortName": "мини бордо",
+    "stageName": "Собрать полностью",
+    "needTo": 0,
+    "price": 200,
+    "remote": 1
+  },
+  {
+    "id": 143,
+    "assortName": "мини бордо",
+    "stageName": "Упаковать",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 144,
+    "assortName": "мини табак",
+    "stageName": "Вырубить",
+    "needTo": 10,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 145,
+    "assortName": "мини табак",
+    "stageName": "Заготовить",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 146,
+    "assortName": "мини табак",
+    "stageName": "Собрать полностью",
+    "needTo": 0,
+    "price": 200,
+    "remote": 1
+  },
+  {
+    "id": 147,
+    "assortName": "мини табак",
+    "stageName": "Упаковать",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 148,
+    "assortName": "Микро черный",
+    "stageName": "Прошить",
+    "needTo": 20,
+    "price": 50,
+    "remote": 1
+  },
+  {
+    "id": 149,
+    "assortName": "Микро черный",
+    "stageName": "Упаковать",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 150,
+    "assortName": "Микро коричневый",
+    "stageName": "Прошить",
+    "needTo": 20,
+    "price": 50,
+    "remote": 1
+  },
+  {
+    "id": 151,
+    "assortName": "Микро коричневый",
+    "stageName": "Упаковать",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 152,
+    "assortName": "Микро красный",
+    "stageName": "Прошить",
+    "needTo": 20,
+    "price": 50,
+    "remote": 1
+  },
+  {
+    "id": 153,
+    "assortName": "Микро красный",
+    "stageName": "Упаковать",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 154,
+    "assortName": "Микро рыжий",
+    "stageName": "Прошить",
+    "needTo": 20,
+    "price": 50,
+    "remote": 1
+  },
+  {
+    "id": 155,
+    "assortName": "Микро рыжий",
+    "stageName": "Упаковать",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 156,
+    "assortName": "Ремень черный 110см",
+    "stageName": "Сделать подвесы",
+    "needTo": 1,
+    "price": 20,
+    "remote": 2
+  },
+  {
+    "id": 157,
+    "assortName": "Ремень черный 110см",
+    "stageName": "Сделать запряжники",
+    "needTo": 1,
+    "price": 50,
+    "remote": 2
+  },
+  {
+    "id": 158,
+    "assortName": "Ремень черный 110см",
+    "stageName": "Сделать шлёвки (Х2)",
+    "needTo": 1,
+    "price": 60,
+    "remote": 2
+  },
+  {
+    "id": 159,
+    "assortName": "Ремень черный 110см",
+    "stageName": "Обрезать + концы",
+    "needTo": 1,
+    "price": 30,
+    "remote": 0
+  },
+  {
+    "id": 160,
+    "assortName": "Ремень черный 110см",
+    "stageName": "Полировка бахтормы",
+    "needTo": 0,
+    "price": 20,
+    "remote": 0
+  },
+  {
+    "id": 161,
+    "assortName": "Ремень черный 110см",
+    "stageName": "Прошить",
+    "needTo": 0,
+    "price": 1,
+    "remote": 0
+  },
+  {
+    "id": 162,
+    "assortName": "Ремень черный 110см",
+    "stageName": "Собрать",
+    "needTo": 0,
+    "price": 10,
+    "remote": 0
+  },
+  {
+    "id": 163,
+    "assortName": "Ремень черный 110см",
+    "stageName": "Упаковать",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 164,
+    "assortName": "Ремень черный 120см",
+    "stageName": "Сделать подвесы",
+    "needTo": 1,
+    "price": 20,
+    "remote": 2
+  },
+  {
+    "id": 165,
+    "assortName": "Ремень черный 120см",
+    "stageName": "Сделать запряжники",
+    "needTo": 1,
+    "price": 50,
+    "remote": 2
+  },
+  {
+    "id": 166,
+    "assortName": "Ремень черный 120см",
+    "stageName": "Сделать шлёвки (Х2)",
+    "needTo": 1,
+    "price": 60,
+    "remote": 2
+  },
+  {
+    "id": 167,
+    "assortName": "Ремень черный 120см",
+    "stageName": "Обрезать + концы",
+    "needTo": 1,
+    "price": 30,
+    "remote": 0
+  },
+  {
+    "id": 168,
+    "assortName": "Ремень черный 120см",
+    "stageName": "Полировка бахтормы",
+    "needTo": 0,
+    "price": 20,
+    "remote": 0
+  },
+  {
+    "id": 169,
+    "assortName": "Ремень черный 120см",
+    "stageName": "Прошить",
+    "needTo": 0,
+    "price": 1,
+    "remote": 0
+  },
+  {
+    "id": 170,
+    "assortName": "Ремень черный 120см",
+    "stageName": "Собрать",
+    "needTo": 0,
+    "price": 10,
+    "remote": 0
+  },
+  {
+    "id": 171,
+    "assortName": "Ремень черный 120см",
+    "stageName": "Упаковать",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 172,
+    "assortName": "Ремень черный 130см",
+    "stageName": "Сделать подвесы",
+    "needTo": 1,
+    "price": 20,
+    "remote": 2
+  },
+  {
+    "id": 173,
+    "assortName": "Ремень черный 130см",
+    "stageName": "Сделать запряжники",
+    "needTo": 1,
+    "price": 50,
+    "remote": 2
+  },
+  {
+    "id": 174,
+    "assortName": "Ремень черный 130см",
+    "stageName": "Сделать шлёвки (Х2)",
+    "needTo": 1,
+    "price": 60,
+    "remote": 2
+  },
+  {
+    "id": 175,
+    "assortName": "Ремень черный 130см",
+    "stageName": "Обрезать + концы",
+    "needTo": 1,
+    "price": 30,
+    "remote": 0
+  },
+  {
+    "id": 176,
+    "assortName": "Ремень черный 130см",
+    "stageName": "Полировка бахтормы",
+    "needTo": 0,
+    "price": 20,
+    "remote": 0
+  },
+  {
+    "id": 177,
+    "assortName": "Ремень черный 130см",
+    "stageName": "Прошить",
+    "needTo": 0,
+    "price": 1,
+    "remote": 0
+  },
+  {
+    "id": 178,
+    "assortName": "Ремень черный 130см",
+    "stageName": "Собрать",
+    "needTo": 0,
+    "price": 10,
+    "remote": 0
+  },
+  {
+    "id": 179,
+    "assortName": "Ремень черный 130см",
+    "stageName": "Упаковать",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 180,
+    "assortName": "Ремень Ч/Ч 110см",
+    "stageName": "Сделать подвесы",
+    "needTo": 1,
+    "price": 20,
+    "remote": 2
+  },
+  {
+    "id": 181,
+    "assortName": "Ремень Ч/Ч 110см",
+    "stageName": "Сделать запряжники",
+    "needTo": 1,
+    "price": 50,
+    "remote": 2
+  },
+  {
+    "id": 182,
+    "assortName": "Ремень Ч/Ч 110см",
+    "stageName": "Сделать шлёвки (Х2)",
+    "needTo": 1,
+    "price": 60,
+    "remote": 2
+  },
+  {
+    "id": 183,
+    "assortName": "Ремень Ч/Ч 110см",
+    "stageName": "Обрезать + концы",
+    "needTo": 1,
+    "price": 30,
+    "remote": 0
+  },
+  {
+    "id": 184,
+    "assortName": "Ремень Ч/Ч 110см",
+    "stageName": "Полировка бахтормы",
+    "needTo": 1,
+    "price": 20,
+    "remote": 0
+  },
+  {
+    "id": 185,
+    "assortName": "Ремень Ч/Ч 110см",
+    "stageName": "Прошить",
+    "needTo": 0,
+    "price": 1,
+    "remote": 0
+  },
+  {
+    "id": 186,
+    "assortName": "Ремень Ч/Ч 110см",
+    "stageName": "Собрать",
+    "needTo": 0,
+    "price": 10,
+    "remote": 0
+  },
+  {
+    "id": 187,
+    "assortName": "Ремень Ч/Ч 110см",
+    "stageName": "Упаковать",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 188,
+    "assortName": "Ремень Ч/Ч 120см",
+    "stageName": "Сделать подвесы",
+    "needTo": 1,
+    "price": 20,
+    "remote": 2
+  },
+  {
+    "id": 189,
+    "assortName": "Ремень Ч/Ч 120см",
+    "stageName": "Сделать запряжники",
+    "needTo": 1,
+    "price": 50,
+    "remote": 2
+  },
+  {
+    "id": 190,
+    "assortName": "Ремень Ч/Ч 120см",
+    "stageName": "Сделать шлёвки (Х2)",
+    "needTo": 1,
+    "price": 60,
+    "remote": 2
+  },
+  {
+    "id": 191,
+    "assortName": "Ремень Ч/Ч 120см",
+    "stageName": "Обрезать + концы",
+    "needTo": 1,
+    "price": 30,
+    "remote": 0
+  },
+  {
+    "id": 192,
+    "assortName": "Ремень Ч/Ч 120см",
+    "stageName": "Полировка бахтормы",
+    "needTo": 0,
+    "price": 20,
+    "remote": 0
+  },
+  {
+    "id": 193,
+    "assortName": "Ремень Ч/Ч 120см",
+    "stageName": "Прошить",
+    "needTo": 0,
+    "price": 1,
+    "remote": 0
+  },
+  {
+    "id": 194,
+    "assortName": "Ремень Ч/Ч 120см",
+    "stageName": "Собрать",
+    "needTo": 0,
+    "price": 10,
+    "remote": 0
+  },
+  {
+    "id": 195,
+    "assortName": "Ремень Ч/Ч 120см",
+    "stageName": "Упаковать",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 196,
+    "assortName": "Ремень Ч/Ч 130см",
+    "stageName": "Сделать подвесы",
+    "needTo": 1,
+    "price": 20,
+    "remote": 2
+  },
+  {
+    "id": 197,
+    "assortName": "Ремень Ч/Ч 130см",
+    "stageName": "Сделать запряжники",
+    "needTo": 1,
+    "price": 50,
+    "remote": 2
+  },
+  {
+    "id": 198,
+    "assortName": "Ремень Ч/Ч 130см",
+    "stageName": "Сделать шлёвки (Х2)",
+    "needTo": 1,
+    "price": 60,
+    "remote": 2
+  },
+  {
+    "id": 199,
+    "assortName": "Ремень Ч/Ч 130см",
+    "stageName": "Обрезать + концы",
+    "needTo": 1,
+    "price": 30,
+    "remote": 0
+  },
+  {
+    "id": 200,
+    "assortName": "Ремень Ч/Ч 130см",
+    "stageName": "Полировка бахтормы",
+    "needTo": 0,
+    "price": 20,
+    "remote": 0
+  },
+  {
+    "id": 201,
+    "assortName": "Ремень Ч/Ч 130см",
+    "stageName": "Прошить",
+    "needTo": 0,
+    "price": 1,
+    "remote": 0
+  },
+  {
+    "id": 202,
+    "assortName": "Ремень Ч/Ч 130см",
+    "stageName": "Собрать",
+    "needTo": 0,
+    "price": 10,
+    "remote": 0
+  },
+  {
+    "id": 203,
+    "assortName": "Ремень Ч/Ч 130см",
+    "stageName": "Упаковать",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 204,
+    "assortName": "Ремень Ч/С 110см",
+    "stageName": "Сделать подвесы",
+    "needTo": 1,
+    "price": 20,
+    "remote": 2
+  },
+  {
+    "id": 205,
+    "assortName": "Ремень Ч/С 110см",
+    "stageName": "Сделать запряжники",
+    "needTo": 1,
+    "price": 50,
+    "remote": 2
+  },
+  {
+    "id": 206,
+    "assortName": "Ремень Ч/С 110см",
+    "stageName": "Сделать шлёвки (Х2)",
+    "needTo": 1,
+    "price": 60,
+    "remote": 2
+  },
+  {
+    "id": 207,
+    "assortName": "Ремень Ч/С 110см",
+    "stageName": "Обрезать + концы",
+    "needTo": 1,
+    "price": 30,
+    "remote": 0
+  },
+  {
+    "id": 208,
+    "assortName": "Ремень Ч/С 110см",
+    "stageName": "Полировка бахтормы",
+    "needTo": 0,
+    "price": 20,
+    "remote": 0
+  },
+  {
+    "id": 209,
+    "assortName": "Ремень Ч/С 110см",
+    "stageName": "Прошить",
+    "needTo": 0,
+    "price": 1,
+    "remote": 0
+  },
+  {
+    "id": 210,
+    "assortName": "Ремень Ч/С 110см",
+    "stageName": "Собрать",
+    "needTo": 0,
+    "price": 10,
+    "remote": 0
+  },
+  {
+    "id": 211,
+    "assortName": "Ремень Ч/С 110см",
+    "stageName": "Упаковать",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 212,
+    "assortName": "Ремень Ч/С 120см",
+    "stageName": "Сделать подвесы",
+    "needTo": 1,
+    "price": 20,
+    "remote": 2
+  },
+  {
+    "id": 213,
+    "assortName": "Ремень Ч/С 120см",
+    "stageName": "Сделать запряжники",
+    "needTo": 1,
+    "price": 50,
+    "remote": 2
+  },
+  {
+    "id": 214,
+    "assortName": "Ремень Ч/С 120см",
+    "stageName": "Сделать шлёвки (Х2)",
+    "needTo": 1,
+    "price": 60,
+    "remote": 2
+  },
+  {
+    "id": 215,
+    "assortName": "Ремень Ч/С 120см",
+    "stageName": "Обрезать + концы",
+    "needTo": 1,
+    "price": 30,
+    "remote": 0
+  },
+  {
+    "id": 216,
+    "assortName": "Ремень Ч/С 120см",
+    "stageName": "Полировка бахтормы",
+    "needTo": 0,
+    "price": 20,
+    "remote": 0
+  },
+  {
+    "id": 217,
+    "assortName": "Ремень Ч/С 120см",
+    "stageName": "Прошить",
+    "needTo": 0,
+    "price": 1,
+    "remote": 0
+  },
+  {
+    "id": 218,
+    "assortName": "Ремень Ч/С 120см",
+    "stageName": "Собрать",
+    "needTo": 0,
+    "price": 10,
+    "remote": 0
+  },
+  {
+    "id": 219,
+    "assortName": "Ремень Ч/С 120см",
+    "stageName": "Упаковать",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 220,
+    "assortName": "Ремень Ч/С 130см",
+    "stageName": "Сделать подвесы",
+    "needTo": 1,
+    "price": 20,
+    "remote": 2
+  },
+  {
+    "id": 221,
+    "assortName": "Ремень Ч/С 130см",
+    "stageName": "Сделать запряжники",
+    "needTo": 1,
+    "price": 50,
+    "remote": 2
+  },
+  {
+    "id": 222,
+    "assortName": "Ремень Ч/С 130см",
+    "stageName": "Сделать шлёвки (Х2)",
+    "needTo": 1,
+    "price": 60,
+    "remote": 2
+  },
+  {
+    "id": 223,
+    "assortName": "Ремень Ч/С 130см",
+    "stageName": "Обрезать + концы",
+    "needTo": 1,
+    "price": 30,
+    "remote": 0
+  },
+  {
+    "id": 224,
+    "assortName": "Ремень Ч/С 130см",
+    "stageName": "Полировка бахтормы",
+    "needTo": 0,
+    "price": 20,
+    "remote": 0
+  },
+  {
+    "id": 225,
+    "assortName": "Ремень Ч/С 130см",
+    "stageName": "Прошить",
+    "needTo": 0,
+    "price": 1,
+    "remote": 0
+  },
+  {
+    "id": 226,
+    "assortName": "Ремень Ч/С 130см",
+    "stageName": "Собрать",
+    "needTo": 0,
+    "price": 10,
+    "remote": 0
+  },
+  {
+    "id": 227,
+    "assortName": "Ремень Ч/С 130см",
+    "stageName": "Упаковать",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 228,
+    "assortName": "Ремень Ч/Рыж 110см",
+    "stageName": "Сделать подвесы",
+    "needTo": 1,
+    "price": 20,
+    "remote": 2
+  },
+  {
+    "id": 229,
+    "assortName": "Ремень Ч/Рыж 110см",
+    "stageName": "Сделать запряжники",
+    "needTo": 1,
+    "price": 50,
+    "remote": 2
+  },
+  {
+    "id": 230,
+    "assortName": "Ремень Ч/Рыж 110см",
+    "stageName": "Сделать шлёвки (Х2)",
+    "needTo": 1,
+    "price": 60,
+    "remote": 2
+  },
+  {
+    "id": 231,
+    "assortName": "Ремень Ч/Рыж 110см",
+    "stageName": "Обрезать + концы",
+    "needTo": 1,
+    "price": 30,
+    "remote": 0
+  },
+  {
+    "id": 232,
+    "assortName": "Ремень Ч/Рыж 110см",
+    "stageName": "Полировка бахтормы",
+    "needTo": 0,
+    "price": 20,
+    "remote": 0
+  },
+  {
+    "id": 233,
+    "assortName": "Ремень Ч/Рыж 110см",
+    "stageName": "Прошить",
+    "needTo": 0,
+    "price": 1,
+    "remote": 0
+  },
+  {
+    "id": 234,
+    "assortName": "Ремень Ч/Рыж 110см",
+    "stageName": "Собрать",
+    "needTo": 0,
+    "price": 10,
+    "remote": 0
+  },
+  {
+    "id": 235,
+    "assortName": "Ремень Ч/Рыж 110см",
+    "stageName": "Упаковать",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 236,
+    "assortName": "Ремень Ч/Рыж 120см",
+    "stageName": "Сделать подвесы",
+    "needTo": 1,
+    "price": 20,
+    "remote": 2
+  },
+  {
+    "id": 237,
+    "assortName": "Ремень Ч/Рыж 120см",
+    "stageName": "Сделать запряжники",
+    "needTo": 1,
+    "price": 50,
+    "remote": 2
+  },
+  {
+    "id": 238,
+    "assortName": "Ремень Ч/Рыж 120см",
+    "stageName": "Сделать шлёвки (Х2)",
+    "needTo": 1,
+    "price": 60,
+    "remote": 2
+  },
+  {
+    "id": 239,
+    "assortName": "Ремень Ч/Рыж 120см",
+    "stageName": "Обрезать + концы",
+    "needTo": 1,
+    "price": 30,
+    "remote": 0
+  },
+  {
+    "id": 240,
+    "assortName": "Ремень Ч/Рыж 120см",
+    "stageName": "Полировка бахтормы",
+    "needTo": 0,
+    "price": 20,
+    "remote": 0
+  },
+  {
+    "id": 241,
+    "assortName": "Ремень Ч/Рыж 120см",
+    "stageName": "Прошить",
+    "needTo": 0,
+    "price": 1,
+    "remote": 0
+  },
+  {
+    "id": 242,
+    "assortName": "Ремень Ч/Рыж 120см",
+    "stageName": "Собрать",
+    "needTo": 0,
+    "price": 10,
+    "remote": 0
+  },
+  {
+    "id": 243,
+    "assortName": "Ремень Ч/Рыж 120см",
+    "stageName": "Упаковать",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 244,
+    "assortName": "Ремень Ч/Рыж 130см",
+    "stageName": "Сделать подвесы",
+    "needTo": 1,
+    "price": 20,
+    "remote": 2
+  },
+  {
+    "id": 245,
+    "assortName": "Ремень Ч/Рыж 130см",
+    "stageName": "Сделать запряжники",
+    "needTo": 1,
+    "price": 50,
+    "remote": 2
+  },
+  {
+    "id": 246,
+    "assortName": "Ремень Ч/Рыж 130см",
+    "stageName": "Сделать шлёвки (Х2)",
+    "needTo": 1,
+    "price": 60,
+    "remote": 2
+  },
+  {
+    "id": 247,
+    "assortName": "Ремень Ч/Рыж 130см",
+    "stageName": "Обрезать + концы",
+    "needTo": 10,
+    "price": 30,
+    "remote": 0
+  },
+  {
+    "id": 248,
+    "assortName": "Ремень Ч/Рыж 130см",
+    "stageName": "Полировка бахтормы",
+    "needTo": 0,
+    "price": 20,
+    "remote": 0
+  },
+  {
+    "id": 249,
+    "assortName": "Ремень Ч/Рыж 130см",
+    "stageName": "Прошить",
+    "needTo": 0,
+    "price": 1,
+    "remote": 0
+  },
+  {
+    "id": 250,
+    "assortName": "Ремень Ч/Рыж 130см",
+    "stageName": "Собрать",
+    "needTo": 0,
+    "price": 10,
+    "remote": 0
+  },
+  {
+    "id": 251,
+    "assortName": "Ремень Ч/Рыж 130см",
+    "stageName": "Упаковать",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 252,
+    "assortName": "Ремень Корич. 110см",
+    "stageName": "Сделать подвесы",
+    "needTo": 1,
+    "price": 20,
+    "remote": 2
+  },
+  {
+    "id": 253,
+    "assortName": "Ремень Корич. 110см",
+    "stageName": "Сделать запряжники",
+    "needTo": 1,
+    "price": 50,
+    "remote": 2
+  },
+  {
+    "id": 254,
+    "assortName": "Ремень Корич. 110см",
+    "stageName": "Сделать шлёвки (Х2)",
+    "needTo": 1,
+    "price": 60,
+    "remote": 2
+  },
+  {
+    "id": 255,
+    "assortName": "Ремень Корич. 110см",
+    "stageName": "Обрезать + концы",
+    "needTo": 1,
+    "price": 30,
+    "remote": 0
+  },
+  {
+    "id": 256,
+    "assortName": "Ремень Корич. 110см",
+    "stageName": "Полировка бахтормы",
+    "needTo": 0,
+    "price": 20,
+    "remote": 0
+  },
+  {
+    "id": 257,
+    "assortName": "Ремень Корич. 110см",
+    "stageName": "Прошить",
+    "needTo": 0,
+    "price": 1,
+    "remote": 0
+  },
+  {
+    "id": 258,
+    "assortName": "Ремень Корич. 110см",
+    "stageName": "Собрать",
+    "needTo": 0,
+    "price": 10,
+    "remote": 0
+  },
+  {
+    "id": 259,
+    "assortName": "Ремень Корич. 110см",
+    "stageName": "Упаковать",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 260,
+    "assortName": "Ремень Корич. 120см",
+    "stageName": "Сделать подвесы",
+    "needTo": 1,
+    "price": 20,
+    "remote": 2
+  },
+  {
+    "id": 261,
+    "assortName": "Ремень Корич. 120см",
+    "stageName": "Сделать запряжники",
+    "needTo": 1,
+    "price": 50,
+    "remote": 2
+  },
+  {
+    "id": 262,
+    "assortName": "Ремень Корич. 120см",
+    "stageName": "Сделать шлёвки (Х2)",
+    "needTo": 1,
+    "price": 60,
+    "remote": 2
+  },
+  {
+    "id": 263,
+    "assortName": "Ремень Корич. 120см",
+    "stageName": "Обрезать + концы",
+    "needTo": 1,
+    "price": 30,
+    "remote": 0
+  },
+  {
+    "id": 264,
+    "assortName": "Ремень Корич. 120см",
+    "stageName": "Полировка бахтормы",
+    "needTo": 0,
+    "price": 20,
+    "remote": 0
+  },
+  {
+    "id": 265,
+    "assortName": "Ремень Корич. 120см",
+    "stageName": "Прошить",
+    "needTo": 0,
+    "price": 1,
+    "remote": 0
+  },
+  {
+    "id": 266,
+    "assortName": "Ремень Корич. 120см",
+    "stageName": "Собрать",
+    "needTo": 0,
+    "price": 10,
+    "remote": 0
+  },
+  {
+    "id": 267,
+    "assortName": "Ремень Корич. 120см",
+    "stageName": "Упаковать",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 268,
+    "assortName": "Ремень корич. 130см",
+    "stageName": "Сделать подвесы",
+    "needTo": 1,
+    "price": 20,
+    "remote": 2
+  },
+  {
+    "id": 269,
+    "assortName": "Ремень корич. 130см",
+    "stageName": "Сделать запряжники",
+    "needTo": 1,
+    "price": 50,
+    "remote": 2
+  },
+  {
+    "id": 270,
+    "assortName": "Ремень корич. 130см",
+    "stageName": "Сделать шлёвки (Х2)",
+    "needTo": 1,
+    "price": 60,
+    "remote": 2
+  },
+  {
+    "id": 271,
+    "assortName": "Ремень корич. 130см",
+    "stageName": "Обрезать + концы",
+    "needTo": 1,
+    "price": 30,
+    "remote": 0
+  },
+  {
+    "id": 272,
+    "assortName": "Ремень корич. 130см",
+    "stageName": "Полировка бахтормы",
+    "needTo": 0,
+    "price": 20,
+    "remote": 0
+  },
+  {
+    "id": 273,
+    "assortName": "Ремень корич. 130см",
+    "stageName": "Прошить",
+    "needTo": 0,
+    "price": 1,
+    "remote": 0
+  },
+  {
+    "id": 274,
+    "assortName": "Ремень корич. 130см",
+    "stageName": "Собрать",
+    "needTo": 0,
+    "price": 10,
+    "remote": 0
+  },
+  {
+    "id": 275,
+    "assortName": "Ремень корич. 130см",
+    "stageName": "Упаковать",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 276,
+    "assortName": "Ремень К/К 110см",
+    "stageName": "Сделать подвесы",
+    "needTo": 1,
+    "price": 20,
+    "remote": 2
+  },
+  {
+    "id": 277,
+    "assortName": "Ремень К/К 110см",
+    "stageName": "Сделать запряжники",
+    "needTo": 1,
+    "price": 50,
+    "remote": 2
+  },
+  {
+    "id": 278,
+    "assortName": "Ремень К/К 110см",
+    "stageName": "Сделать шлёвки (Х2)",
+    "needTo": 10,
+    "price": 60,
+    "remote": 2
+  },
+  {
+    "id": 279,
+    "assortName": "Ремень К/К 110см",
+    "stageName": "Обрезать + концы",
+    "needTo": 1,
+    "price": 30,
+    "remote": 0
+  },
+  {
+    "id": 280,
+    "assortName": "Ремень К/К 110см",
+    "stageName": "Полировка бахтормы",
+    "needTo": 0,
+    "price": 20,
+    "remote": 0
+  },
+  {
+    "id": 281,
+    "assortName": "Ремень К/К 110см",
+    "stageName": "Прошить",
+    "needTo": 0,
+    "price": 1,
+    "remote": 0
+  },
+  {
+    "id": 282,
+    "assortName": "Ремень К/К 110см",
+    "stageName": "Собрать",
+    "needTo": 0,
+    "price": 10,
+    "remote": 0
+  },
+  {
+    "id": 283,
+    "assortName": "Ремень К/К 110см",
+    "stageName": "Упаковать",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 284,
+    "assortName": "Ремень К/К 120см",
+    "stageName": "Сделать подвесы",
+    "needTo": 1,
+    "price": 20,
+    "remote": 2
+  },
+  {
+    "id": 285,
+    "assortName": "Ремень К/К 120см",
+    "stageName": "Сделать запряжники",
+    "needTo": 1,
+    "price": 50,
+    "remote": 2
+  },
+  {
+    "id": 286,
+    "assortName": "Ремень К/К 120см",
+    "stageName": "Сделать шлёвки (Х2)",
+    "needTo": 1,
+    "price": 60,
+    "remote": 2
+  },
+  {
+    "id": 287,
+    "assortName": "Ремень К/К 120см",
+    "stageName": "Обрезать + концы",
+    "needTo": 1,
+    "price": 30,
+    "remote": 0
+  },
+  {
+    "id": 288,
+    "assortName": "Ремень К/К 120см",
+    "stageName": "Полировка бахтормы",
+    "needTo": 0,
+    "price": 20,
+    "remote": 0
+  },
+  {
+    "id": 289,
+    "assortName": "Ремень К/К 120см",
+    "stageName": "Прошить",
+    "needTo": 0,
+    "price": 1,
+    "remote": 0
+  },
+  {
+    "id": 290,
+    "assortName": "Ремень К/К 120см",
+    "stageName": "Собрать",
+    "needTo": 0,
+    "price": 10,
+    "remote": 0
+  },
+  {
+    "id": 291,
+    "assortName": "Ремень К/К 120см",
+    "stageName": "Упаковать",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 292,
+    "assortName": "Ремень К/К 130см",
+    "stageName": "Сделать подвесы",
+    "needTo": 1,
+    "price": 20,
+    "remote": 2
+  },
+  {
+    "id": 293,
+    "assortName": "Ремень К/К 130см",
+    "stageName": "Сделать запряжники",
+    "needTo": 1,
+    "price": 50,
+    "remote": 2
+  },
+  {
+    "id": 294,
+    "assortName": "Ремень К/К 130см",
+    "stageName": "Сделать шлёвки (Х2)",
+    "needTo": 1,
+    "price": 60,
+    "remote": 2
+  },
+  {
+    "id": 295,
+    "assortName": "Ремень К/К 130см",
+    "stageName": "Обрезать + концы",
+    "needTo": 1,
+    "price": 30,
+    "remote": 0
+  },
+  {
+    "id": 296,
+    "assortName": "Ремень К/К 130см",
+    "stageName": "Полировка бахтормы",
+    "needTo": 0,
+    "price": 20,
+    "remote": 0
+  },
+  {
+    "id": 297,
+    "assortName": "Ремень К/К 130см",
+    "stageName": "Прошить",
+    "needTo": 0,
+    "price": 1,
+    "remote": 0
+  },
+  {
+    "id": 298,
+    "assortName": "Ремень К/К 130см",
+    "stageName": "Собрать",
+    "needTo": 0,
+    "price": 10,
+    "remote": 0
+  },
+  {
+    "id": 299,
+    "assortName": "Ремень К/К 130см",
+    "stageName": "Упаковать",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 300,
+    "assortName": "Ремень К/Рыж 110см",
+    "stageName": "Сделать подвесы",
+    "needTo": 1,
+    "price": 20,
+    "remote": 2
+  },
+  {
+    "id": 301,
+    "assortName": "Ремень К/Рыж 110см",
+    "stageName": "Сделать запряжники",
+    "needTo": 1,
+    "price": 50,
+    "remote": 2
+  },
+  {
+    "id": 302,
+    "assortName": "Ремень К/Рыж 110см",
+    "stageName": "Сделать шлёвки (Х2)",
+    "needTo": 1,
+    "price": 60,
+    "remote": 2
+  },
+  {
+    "id": 303,
+    "assortName": "Ремень К/Рыж 110см",
+    "stageName": "Обрезать + концы",
+    "needTo": 1,
+    "price": 30,
+    "remote": 0
+  },
+  {
+    "id": 304,
+    "assortName": "Ремень К/Рыж 110см",
+    "stageName": "Полировка бахтормы",
+    "needTo": 0,
+    "price": 20,
+    "remote": 0
+  },
+  {
+    "id": 305,
+    "assortName": "Ремень К/Рыж 110см",
+    "stageName": "Прошить",
+    "needTo": 0,
+    "price": 1,
+    "remote": 0
+  },
+  {
+    "id": 306,
+    "assortName": "Ремень К/Рыж 110см",
+    "stageName": "Собрать",
+    "needTo": 0,
+    "price": 10,
+    "remote": 0
+  },
+  {
+    "id": 307,
+    "assortName": "Ремень К/Рыж 110см",
+    "stageName": "Упаковать",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 308,
+    "assortName": "Ремень К/Рыж 120см",
+    "stageName": "Сделать подвесы",
+    "needTo": 1,
+    "price": 20,
+    "remote": 2
+  },
+  {
+    "id": 309,
+    "assortName": "Ремень К/Рыж 120см",
+    "stageName": "Сделать запряжники",
+    "needTo": 1,
+    "price": 50,
+    "remote": 2
+  },
+  {
+    "id": 310,
+    "assortName": "Ремень К/Рыж 120см",
+    "stageName": "Сделать шлёвки (Х2)",
+    "needTo": 1,
+    "price": 60,
+    "remote": 2
+  },
+  {
+    "id": 311,
+    "assortName": "Ремень К/Рыж 120см",
+    "stageName": "Обрезать + концы",
+    "needTo": 1,
+    "price": 30,
+    "remote": 0
+  },
+  {
+    "id": 312,
+    "assortName": "Ремень К/Рыж 120см",
+    "stageName": "Полировка бахтормы",
+    "needTo": 0,
+    "price": 20,
+    "remote": 0
+  },
+  {
+    "id": 313,
+    "assortName": "Ремень К/Рыж 120см",
+    "stageName": "Прошить",
+    "needTo": 0,
+    "price": 1,
+    "remote": 0
+  },
+  {
+    "id": 314,
+    "assortName": "Ремень К/Рыж 120см",
+    "stageName": "Собрать",
+    "needTo": 0,
+    "price": 10,
+    "remote": 0
+  },
+  {
+    "id": 315,
+    "assortName": "Ремень К/Рыж 120см",
+    "stageName": "Упаковать",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 316,
+    "assortName": "Ремень К/Рыж 130см",
+    "stageName": "Сделать подвесы",
+    "needTo": 1,
+    "price": 20,
+    "remote": 2
+  },
+  {
+    "id": 317,
+    "assortName": "Ремень К/Рыж 130см",
+    "stageName": "Сделать запряжники",
+    "needTo": 1,
+    "price": 50,
+    "remote": 2
+  },
+  {
+    "id": 318,
+    "assortName": "Ремень К/Рыж 130см",
+    "stageName": "Сделать шлёвки (Х2)",
+    "needTo": 1,
+    "price": 60,
+    "remote": 2
+  },
+  {
+    "id": 319,
+    "assortName": "Ремень К/Рыж 130см",
+    "stageName": "Обрезать + концы",
+    "needTo": 1,
+    "price": 30,
+    "remote": 0
+  },
+  {
+    "id": 320,
+    "assortName": "Ремень К/Рыж 130см",
+    "stageName": "Полировка бахтормы",
+    "needTo": 0,
+    "price": 20,
+    "remote": 0
+  },
+  {
+    "id": 321,
+    "assortName": "Ремень К/Рыж 130см",
+    "stageName": "Прошить",
+    "needTo": 0,
+    "price": 1,
+    "remote": 0
+  },
+  {
+    "id": 322,
+    "assortName": "Ремень К/Рыж 130см",
+    "stageName": "Собрать",
+    "needTo": 0,
+    "price": 10,
+    "remote": 0
+  },
+  {
+    "id": 323,
+    "assortName": "Ремень К/Рыж 130см",
+    "stageName": "Упаковать",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 324,
+    "assortName": "мини синий",
+    "stageName": "Вырубить",
+    "needTo": 10,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 325,
+    "assortName": "мини синий",
+    "stageName": "Заготовить",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  },
+  {
+    "id": 326,
+    "assortName": "мини синий",
+    "stageName": "Собрать полностью",
+    "needTo": 0,
+    "price": 200,
+    "remote": 1
+  },
+  {
+    "id": 327,
+    "assortName": "мини синий",
+    "stageName": "Упаковать",
+    "needTo": 0,
+    "price": 15,
+    "remote": 0
+  }
+]
