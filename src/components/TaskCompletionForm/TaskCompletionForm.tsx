@@ -30,10 +30,11 @@ const TaskCompletionForm = () => {
     const [listTasks, setListTasks] = useState<IMyTasks[]>([])
     const [task, setTask] = useState<IMyTasks>({} as IMyTasks)
     const userId = search.get('userId')
+    const localTaskId = search.get('tasks')
     const [taskId, setTaskId] = useState<number>(0)
     const [error, setError] = useState<{ status: boolean, msg: string }>({ status: true, msg: 'Получение данных' })
 
-    const localTasks: any = require('../../data/tasks.json')
+    const localTasks: IMyTasks[] = require('../../data/tasks.json')
 
     const checkData = () => {
         for (const itemTask of listTasks ) {
@@ -92,6 +93,32 @@ const TaskCompletionForm = () => {
         tg.MainButton.setParams({
             text: 'Отправить данные'
         })
+        const myTasks: IMyTasks[] = [{ id: 0, assortName: 'Выберите задачу', stageName: '', needTo: 0, price: 0, priority: 0, remote: false, made: 0, defect: 0, refuse: false }]
+        const tempTasks = JSON.parse(localTaskId ? localTaskId : '')
+        Object.keys(tempTasks).forEach(t => {
+            const localFind = localTasks.filter(lt => lt.id === Number(t))
+            if (localFind.length) {
+                myTasks.push({
+                    id: localFind[0].id,
+                    assortName: localFind[0].assortName,
+                    stageName: localFind[0].stageName,
+                    needTo: tempTasks[t],
+                    price: localFind[0].price,
+                    priority: 0,
+                    remote: false,
+                    made: 0,
+                    defect: 0,
+                    refuse: false
+                })
+            }
+        })
+        setListTasks(myTasks)
+        setError({ status: false, msg: '' })
+
+
+
+
+
         // axios.get<IResponseTask>(`https://195.68.140.114:3001/tasks/my/${userId}`)
         //     .then((response) => {
         //         if (response.status === 200) {
