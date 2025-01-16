@@ -15,3 +15,15 @@
     padding: 10px;
     margin-top: 15px;
 }
+
+.remote-task {
+    color: blue;
+}
+
+.show-task {
+    display: block;
+}
+
+.hide-task {
+    display: none;
+}

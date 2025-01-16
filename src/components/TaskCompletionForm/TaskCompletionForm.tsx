@@ -175,7 +175,7 @@ const TaskCompletionForm = () => {
                                     className={'input'}
                                     type="number"
                                     placeholder={'Количество сделанных'}
-                                    value={task.made}
+                                    value={task.made ? task.made : ''}
                                     onChange={onChangeMade}
                                     min={0}
                                 />
@@ -185,7 +185,7 @@ const TaskCompletionForm = () => {
                                     className={'input'}
                                     type="number"
                                     placeholder={'Количество брака'}
-                                    value={task.defect}
+                                    value={task.defect ? task.defect : ''}
                                     onChange={onChangeDefect}
                                     min={0}
                                 />
