@@ -33,6 +33,7 @@ const TaskSelectionForm = () => {
     const [error, setError] = useState<{ status: boolean, msg: string }>({ status: true, msg: 'Получение данных' })
 
     const localTasks: ITask[] = require('../../data/tasks.json')
+    console.log('localTasks - ', localTasks.length)
 
     const checkData = (): boolean => {
         return taskIds.length > 0
@@ -65,9 +66,11 @@ const TaskSelectionForm = () => {
         const tasks: { id: string, content: string }[] = []
         const tasksRemote: { id: string, content: string }[] = []
         let id = 0
+        console.log(tempTasks)
         const stages: { id: string, content: string }[] = [{ id: '0', content: 'Выбранные задачи' }]
         Object.keys(tempTasks).forEach(t => {
             const temp = { id: ``, content: `Неизвестно [] ${tempTasks[t]} шт. 0 руб.` }
+            console.log(t)
             const localFind = localTasks.filter(lt => lt.id === Number(t))
             if (localFind.length) {
                 temp.id = `${localFind[0].id}`
@@ -128,7 +131,7 @@ const TaskSelectionForm = () => {
                 <h3>{error.msg}</h3>
                 :
                 <>
-                    {taskIds.length && <h4>Выбрано задач {taskIds.length}</h4>}
+                    {taskIds.length ? <h4>Выбрано задач {taskIds.length}</h4> : null}
                     <select value={stageId.id} onChange={onChangeStages} className={'select'}>
                         {listStage.map(stage => (
                             <option key={stage.id} value={stage.id}>{stage.content}</option>
@@ -146,7 +149,7 @@ const TaskSelectionForm = () => {
                         </div>
                     }
                     <div>
-                        {listTasksRemote.length && <h3>Удаленные задачи</h3>}
+                        {listTasksRemote.length ? <h3>Удаленные задачи</h3> : null}
                         {listTasksRemote.map(task => (
                             <p key={task.id} className={'remote-task'}>
                                 <input key={task.id} id={task.id} type='checkbox' defaultChecked={false}
