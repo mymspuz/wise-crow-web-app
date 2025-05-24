@@ -50,7 +50,8 @@ const TaskCompletionForm = () => {
         setTaskId(Number(e.target.value))
     }
 
-    function onChangeMade(e: { target: { value: any } }) {
+    function onChangeMade(e: { target: { value: any, id: string } }) {
+        const taskId = Number(e.target.id)
         setListTasks(listTasks.map(v => {
             if (v.id === taskId) {
                 const temp = Number(e.target.value)
@@ -62,7 +63,8 @@ const TaskCompletionForm = () => {
         }))
     }
 
-    function onChangeDefect(e: { target: { value: any } }) {
+    function onChangeDefect(e: { target: { value: any, id: string } }) {
+        const taskId = Number(e.target.id)
         setListTasks(listTasks.map(v => {
             if (v.id === taskId) {
                 const temp = Number(e.target.value)
@@ -75,6 +77,7 @@ const TaskCompletionForm = () => {
     }
 
     function onChangeRefuseTask(e: { target: { id: any, checked: boolean } }) {
+        const taskId = Number(e.target.id)
         setListTasks(listTasks.map(v => {
             if (v.id === taskId) {
                 v.refuse = e.target.checked
@@ -160,18 +163,12 @@ const TaskCompletionForm = () => {
                 <h3>{error.msg}</h3>
                 :
                 <>
-                    <select value={taskId} onChange={onChangeTasks} className={'select'}>
-                        {listTasks.map(task => (
-                            <option key={task.id} value={task.id}>{`${task.assortName} ${task.stageName ? "[" + task.stageName + "]" : ""}`}</option>
-                        ))}
-                    </select>
-                    <hr/>
-                    {taskId !== 0 && task && task.id === taskId
-                        ?
-                        <>
-                            <p>Нужно было сделать {task.needTo}</p>
+                    {listTasks.map(task => (
+                        <div key={task.id} className={'block-task'}>
+                            <p>Нужно было сделать <strong>{task.needTo}</strong> {`${task.assortName} ${task.stageName ? "[" + task.stageName + "]" : ""}`}</p>
                             <div>
                                 <input
+                                    id={`${task.id}`}
                                     className={'input'}
                                     type="number"
                                     placeholder={'Количество сделанных'}
@@ -182,6 +179,7 @@ const TaskCompletionForm = () => {
                             </div>
                             <div>
                                 <input
+                                    id={`${task.id}`}
                                     className={'input'}
                                     type="number"
                                     placeholder={'Количество брака'}
@@ -191,12 +189,54 @@ const TaskCompletionForm = () => {
                                 />
                             </div>
                             <div>
-                                <input type='checkbox' className={'checkbox'} onChange={onChangeRefuseTask} checked={task.refuse}/>Освободить задачу
+                                <input
+                                    id={`${task.id}`}
+                                    type='checkbox'
+                                    className={'checkbox'}
+                                    onChange={onChangeRefuseTask}
+                                    checked={task.refuse}
+                                />Освободить задачу
                             </div>
-                        </>
-                        :
-                        <p>Не выбрана задача</p>
-                    }
+                        </div>
+                    ))}
+
+                    {/*<select value={taskId} onChange={onChangeTasks} className={'select'}>*/}
+                    {/*    {listTasks.map(task => (*/}
+                    {/*        <option key={task.id} value={task.id}>{`${task.assortName} ${task.stageName ? "[" + task.stageName + "]" : ""}`}</option>*/}
+                    {/*    ))}*/}
+                    {/*</select>*/}
+                    {/*<hr/>*/}
+                    {/*{taskId !== 0 && task && task.id === taskId*/}
+                    {/*    ?*/}
+                    {/*    <>*/}
+                    {/*        <p>Нужно было сделать {task.needTo}</p>*/}
+                    {/*        <div>*/}
+                    {/*            <input*/}
+                    {/*                className={'input'}*/}
+                    {/*                type="number"*/}
+                    {/*                placeholder={'Количество сделанных'}*/}
+                    {/*                value={task.made ? task.made : ''}*/}
+                    {/*                onChange={onChangeMade}*/}
+                    {/*                min={0}*/}
+                    {/*            />*/}
+                    {/*        </div>*/}
+                    {/*        <div>*/}
+                    {/*            <input*/}
+                    {/*                className={'input'}*/}
+                    {/*                type="number"*/}
+                    {/*                placeholder={'Количество брака'}*/}
+                    {/*                value={task.defect ? task.defect : ''}*/}
+                    {/*                onChange={onChangeDefect}*/}
+                    {/*                min={0}*/}
+                    {/*            />*/}
+                    {/*        </div>*/}
+                    {/*        <div>*/}
+                    {/*            <input type='checkbox' className={'checkbox'} onChange={onChangeRefuseTask} checked={task.refuse}/>Освободить задачу*/}
+                    {/*        </div>*/}
+                    {/*    </>*/}
+                    {/*    :*/}
+                    {/*    <p>Не выбрана задача</p>*/}
+                    {/*}*/}
                 </>
             }
         </div>
