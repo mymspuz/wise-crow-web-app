@@ -96,7 +96,8 @@ const TaskCompletionForm = () => {
         tg.MainButton.setParams({
             text: 'Отправить данные'
         })
-        const myTasks: IMyTasks[] = [{ id: 0, assortName: 'Выберите задачу', stageName: '', needTo: 0, price: 0, priority: 0, remote: false, made: 0, defect: 0, refuse: false }]
+        // const myTasks: IMyTasks[] = [{ id: 0, assortName: 'Выберите задачу', stageName: '', needTo: 0, price: 0, priority: 0, remote: false, made: 0, defect: 0, refuse: false }]
+        const myTasks: IMyTasks[] = []
         const tempTasks = JSON.parse(localTaskId ? localTaskId : '')
         Object.keys(tempTasks).forEach(t => {
             const localFind = localTasks.filter(lt => lt.id === Number(t))
@@ -165,7 +166,7 @@ const TaskCompletionForm = () => {
                 <>
                     {listTasks.map(task => (
                         <div key={task.id} className={'block-task'}>
-                            <p>Нужно было сделать <strong>{task.needTo}</strong> {`${task.assortName} ${task.stageName ? "[" + task.stageName + "]" : ""}`}</p>
+                            <p>Нужно было сделать <strong>{task.needTo}</strong> <br />{`${task.assortName} ${task.stageName ? "[" + task.stageName + "]" : ""}`}</p>
                             <div>
                                 <input
                                     id={`${task.id}`}
