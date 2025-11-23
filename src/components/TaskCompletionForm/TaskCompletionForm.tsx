@@ -173,6 +173,7 @@ const TaskCompletionForm = () => {
                                 <div className="input-row">
                                     <div className="input-group half">
                                         <input
+                                            id={`${task.id}`}
                                             type="number"
                                             value={task.made ? task.made : ''}
                                             onChange={onChangeMade}
@@ -184,6 +185,7 @@ const TaskCompletionForm = () => {
 
                                     <div className="input-group half">
                                         <input
+                                            id={`${task.id}`}
                                             type="number"
                                             value={task.defect ? task.defect : ''}
                                             onChange={onChangeDefect}

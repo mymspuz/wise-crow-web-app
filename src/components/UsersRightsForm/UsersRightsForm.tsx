@@ -146,7 +146,7 @@ const UsersRightsForm = () => {
                                     <label className="switch">
                                         <input
                                             type="checkbox"
-                                            id={`stage-${r.stageName}`}
+                                            id={`${r.id}`}
                                             checked={isChecked(r.id)}
                                             onChange={onChangeRights}
                                         />
