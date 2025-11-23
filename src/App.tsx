@@ -9,7 +9,7 @@ import UsersRightsForm from './components/UsersRightsForm/UsersRightsForm'
 function App() {
     return (
         <div className="App">
-            <Header />
+            {/*<Header />*/}
             <HashRouter>
                 <Routes>
                     <Route path={'/TaskSelection'} element={<TaskSelectionForm />} />

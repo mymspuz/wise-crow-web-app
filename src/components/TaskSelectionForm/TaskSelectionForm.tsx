@@ -125,40 +125,79 @@ const TaskSelectionForm = () => {
     }, [onSendData])
 
     return (
-        <div className={"form"}>
-            {error.status
-                ?
-                <h3>{error.msg}</h3>
-                :
-                <>
-                    {taskIds.length ? <h4>Выбрано задач {taskIds.length}</h4> : null}
-                    <select value={stageId.id} onChange={onChangeStages} className={'select'}>
-                        {listStage.map(stage => (
-                            <option key={stage.id} value={stage.id}>{stage.content}</option>
-                        ))}
-                    </select>
-                    <hr/>
-                    {stageId &&
-                        <div>
-                            {listTasks.map(task => (
-                                <p key={task.id} className={(stageId.id !== '0' && task.content.includes(stageId.name)) || (stageId.id === '0' && taskIds.includes(Number(task.id))) ? 'show-task' : 'hide-task'}>
-                                    <input key={task.id} id={task.id} type='checkbox' defaultChecked={false}
-                                           onChange={onChangeRemoteTasks}/>{task.content}
+        <div className="telegram-container">
+            <div className="form-container">
+                {error.status
+                    ?
+                    <h3>{error.msg}</h3>
+                    :
+                    <fieldset className="form-section">
+                        {taskIds.length ? <h4>Выбрано задач {taskIds.length}</h4> : null}
+                        <div className="input-row">
+                            <div className="input-group half">
+                                <select
+                                    id="stageName"
+                                    value={stageId.id}
+                                    onChange={onChangeStages}
+                                    className={''}
+                                >
+                                    {listStage.map(stage => (
+                                        <option key={stage.id} value={stage.id}>{stage.content}</option>
+                                    ))}
+                                </select>
+                            </div>
+                        </div>
+                        <hr/>
+                        {stageId &&
+                            <div className="input-row">
+                                {listTasks.map(task => (
+                                    <p key={task.id}
+                                       className={(stageId.id !== '0' && task.content.includes(stageId.name)) || (stageId.id === '0' && taskIds.includes(Number(task.id))) ? 'show-task' : 'hide-task'}
+                                    >
+                                        <div className="switch-group">
+                                            <label className="switch">
+                                                <input
+                                                    type="checkbox"
+                                                    key={task.id}
+                                                    id={task.id}
+                                                    onChange={onChangeRemoteTasks}
+                                                    defaultChecked={false}
+                                                />
+                                                <span className="slider"></span>
+                                            </label>
+                                            <span>{task.content}</span>
+                                        </div>
+                                        {/*<input key={task.id} id={task.id} type='checkbox' defaultChecked={false}*/}
+                                        {/*       onChange={onChangeRemoteTasks}/>{task.content}*/}
+                                    </p>
+                                ))}
+                            </div>
+                        }
+                        <div className="input-row">
+                            {listTasksRemote.length ? <h3>Удаленные задачи</h3> : null}
+                            {listTasksRemote.map(task => (
+                                <p key={task.id} className={'remote-task'}>
+                                    <div className="switch-group">
+                                        <label className="switch">
+                                            <input
+                                                type="checkbox"
+                                                key={task.id}
+                                                id={task.id}
+                                                onChange={onChangeRemoteTasks}
+                                                defaultChecked={false}
+                                            />
+                                            <span className="slider"></span>
+                                        </label>
+                                        <span>{task.content}</span>
+                                    </div>
+                                    {/*<input key={task.id} id={task.id} type='checkbox' defaultChecked={false}*/}
+                                    {/*       onChange={onChangeRemoteTasks}/>{task.content}*/}
                                 </p>
                             ))}
                         </div>
-                    }
-                    <div>
-                        {listTasksRemote.length ? <h3>Удаленные задачи</h3> : null}
-                        {listTasksRemote.map(task => (
-                            <p key={task.id} className={'remote-task'}>
-                                <input key={task.id} id={task.id} type='checkbox' defaultChecked={false}
-                                       onChange={onChangeRemoteTasks}/>{task.content}
-                            </p>
-                        ))}
-                    </div>
-                </>
-            }
+                    </fieldset>
+                }
+            </div>
         </div>
     )
 }
