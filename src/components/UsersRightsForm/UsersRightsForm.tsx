@@ -99,9 +99,6 @@ const UsersRightsForm = () => {
                 <fieldset className="form-section">
                     <div className="input-row">
                         <div className="input-group half">
-                            <label htmlFor="userName">
-                                Выберите пользователя
-                            </label>
                             <select
                                 id="userName"
                                 value={userId.id}

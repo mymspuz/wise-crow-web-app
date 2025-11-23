@@ -164,19 +164,15 @@ const TaskCompletionForm = () => {
                     ?
                     <h3>{error.msg}</h3>
                     :
-                    <fieldset className="form-section">
+                    <>
                         {listTasks.map(task => (
-                            <div key={task.id} className={'block-task'}>
+                            <fieldset key={task.id} className={'form-section'}>
                                 <p>Нужно было сделать <strong>{task.needTo}</strong>
                                     <br/>{`${task.assortName} ${task.stageName ? "[" + task.stageName + "]" : ""}`}
                                 </p>
                                 <div className="input-row">
                                     <div className="input-group half">
-                                        <label htmlFor={`${task.id}-${task.stageName}`} className="required">
-                                            Количество сделанных
-                                        </label>
                                         <input
-                                            id={`${task.id}-${task.stageName}`}
                                             type="number"
                                             value={task.made ? task.made : ''}
                                             onChange={onChangeMade}
@@ -187,11 +183,7 @@ const TaskCompletionForm = () => {
                                     </div>
 
                                     <div className="input-group half">
-                                        <label htmlFor={`${task.id}-${task.assortName}`} className="required">
-                                            Количество брака
-                                        </label>
                                         <input
-                                            id={`${task.id}-${task.assortName}`}
                                             type="number"
                                             value={task.defect ? task.defect : ''}
                                             onChange={onChangeDefect}
@@ -201,20 +193,19 @@ const TaskCompletionForm = () => {
                                     </div>
                                 </div>
                                 <div className="input-row">
-                                    <div className="input-group">
-                                        <div className="switch-group">
-                                            <label className="switch">
-                                                <input
-                                                    type="checkbox"
-                                                    id={`${task.id}-${task.id}`}
-                                                    checked={task.refuse}
-                                                    onChange={onChangeRefuseTask}
-                                                />
-                                                <span className="slider"></span>
-                                            </label>
-                                            <span>Освободить задачу</span>
-                                        </div>
+                                    {/*<div className="input-group">*/}
+                                    <div className="switch-group">
+                                        <label className="switch">
+                                            <input
+                                                type="checkbox"
+                                                checked={task.refuse}
+                                                onChange={onChangeRefuseTask}
+                                            />
+                                            <span className="slider"></span>
+                                        </label>
+                                        <span>Освободить задачу</span>
                                     </div>
+                                    {/*</div>*/}
                                 </div>
 
                                 {/*<div>*/}
@@ -248,9 +239,9 @@ const TaskCompletionForm = () => {
                                 {/*        checked={task.refuse}*/}
                                 {/*    />Освободить задачу*/}
                                 {/*</div>*/}
-                            </div>
+                            </fieldset>
                         ))}
-                    </fieldset>
+                    </>
                 }
             </div>
         </div>
