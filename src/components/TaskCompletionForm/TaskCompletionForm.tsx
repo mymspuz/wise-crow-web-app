@@ -158,88 +158,101 @@ const TaskCompletionForm = () => {
     }, [taskId])
 
     return (
-        <div className={"form"}>
-            {error.status
-                ?
-                <h3>{error.msg}</h3>
-                :
-                <>
-                    {listTasks.map(task => (
-                        <div key={task.id} className={'block-task'}>
-                            <p>Нужно было сделать <strong>{task.needTo}</strong> <br />{`${task.assortName} ${task.stageName ? "[" + task.stageName + "]" : ""}`}</p>
-                            <div>
-                                <input
-                                    id={`${task.id}`}
-                                    className={'input'}
-                                    type="number"
-                                    placeholder={'Количество сделанных'}
-                                    value={task.made ? task.made : ''}
-                                    onChange={onChangeMade}
-                                    min={0}
-                                />
-                            </div>
-                            <div>
-                                <input
-                                    id={`${task.id}`}
-                                    className={'input'}
-                                    type="number"
-                                    placeholder={'Количество брака'}
-                                    value={task.defect ? task.defect : ''}
-                                    onChange={onChangeDefect}
-                                    min={0}
-                                />
-                            </div>
-                            <div>
-                                <input
-                                    id={`${task.id}`}
-                                    type='checkbox'
-                                    className={'checkbox'}
-                                    onChange={onChangeRefuseTask}
-                                    checked={task.refuse}
-                                />Освободить задачу
-                            </div>
-                        </div>
-                    ))}
+        <div className="telegram-container">
+            <div className="form-container">
+                {error.status
+                    ?
+                    <h3>{error.msg}</h3>
+                    :
+                    <fieldset className="form-section">
+                        {listTasks.map(task => (
+                            <div key={task.id} className={'block-task'}>
+                                <p>Нужно было сделать <strong>{task.needTo}</strong>
+                                    <br/>{`${task.assortName} ${task.stageName ? "[" + task.stageName + "]" : ""}`}
+                                </p>
+                                <div className="input-row">
+                                    <div className="input-group half">
+                                        <label htmlFor={`${task.id}-${task.stageName}`} className="required">
+                                            Количество сделанных
+                                        </label>
+                                        <input
+                                            id={`${task.id}-${task.stageName}`}
+                                            type="number"
+                                            value={task.made ? task.made : ''}
+                                            onChange={onChangeMade}
+                                            placeholder={"Количество сделанных"}
+                                            required
+                                            min={0}
+                                        />
+                                    </div>
 
-                    {/*<select value={taskId} onChange={onChangeTasks} className={'select'}>*/}
-                    {/*    {listTasks.map(task => (*/}
-                    {/*        <option key={task.id} value={task.id}>{`${task.assortName} ${task.stageName ? "[" + task.stageName + "]" : ""}`}</option>*/}
-                    {/*    ))}*/}
-                    {/*</select>*/}
-                    {/*<hr/>*/}
-                    {/*{taskId !== 0 && task && task.id === taskId*/}
-                    {/*    ?*/}
-                    {/*    <>*/}
-                    {/*        <p>Нужно было сделать {task.needTo}</p>*/}
-                    {/*        <div>*/}
-                    {/*            <input*/}
-                    {/*                className={'input'}*/}
-                    {/*                type="number"*/}
-                    {/*                placeholder={'Количество сделанных'}*/}
-                    {/*                value={task.made ? task.made : ''}*/}
-                    {/*                onChange={onChangeMade}*/}
-                    {/*                min={0}*/}
-                    {/*            />*/}
-                    {/*        </div>*/}
-                    {/*        <div>*/}
-                    {/*            <input*/}
-                    {/*                className={'input'}*/}
-                    {/*                type="number"*/}
-                    {/*                placeholder={'Количество брака'}*/}
-                    {/*                value={task.defect ? task.defect : ''}*/}
-                    {/*                onChange={onChangeDefect}*/}
-                    {/*                min={0}*/}
-                    {/*            />*/}
-                    {/*        </div>*/}
-                    {/*        <div>*/}
-                    {/*            <input type='checkbox' className={'checkbox'} onChange={onChangeRefuseTask} checked={task.refuse}/>Освободить задачу*/}
-                    {/*        </div>*/}
-                    {/*    </>*/}
-                    {/*    :*/}
-                    {/*    <p>Не выбрана задача</p>*/}
-                    {/*}*/}
-                </>
-            }
+                                    <div className="input-group half">
+                                        <label htmlFor={`${task.id}-${task.assortName}`} className="required">
+                                            Количество брака
+                                        </label>
+                                        <input
+                                            id={`${task.id}-${task.assortName}`}
+                                            type="number"
+                                            value={task.defect ? task.defect : ''}
+                                            onChange={onChangeDefect}
+                                            placeholder={'Количество брака'}
+                                            min={0}
+                                        />
+                                    </div>
+                                </div>
+                                <div className="input-row">
+                                    <div className="input-group">
+                                        <div className="switch-group">
+                                            <label className="switch">
+                                                <input
+                                                    type="checkbox"
+                                                    id={`${task.id}-${task.id}`}
+                                                    checked={task.refuse}
+                                                    onChange={onChangeRefuseTask}
+                                                />
+                                                <span className="slider"></span>
+                                            </label>
+                                            <span>Освободить задачу</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/*<div>*/}
+                                {/*    <input*/}
+                                {/*        id={`${task.id}`}*/}
+                                {/*        className={'input'}*/}
+                                {/*        type="number"*/}
+                                {/*        placeholder={'Количество сделанных'}*/}
+                                {/*        value={task.made ? task.made : ''}*/}
+                                {/*        onChange={onChangeMade}*/}
+                                {/*        min={0}*/}
+                                {/*    />*/}
+                                {/*</div>*/}
+                                {/*<div>*/}
+                                {/*    <input*/}
+                                {/*        id={`${task.id}`}*/}
+                                {/*        className={'input'}*/}
+                                {/*        type="number"*/}
+                                {/*        placeholder={'Количество брака'}*/}
+                                {/*        value={task.defect ? task.defect : ''}*/}
+                                {/*        onChange={onChangeDefect}*/}
+                                {/*        min={0}*/}
+                                {/*    />*/}
+                                {/*</div>*/}
+                                {/*<div>*/}
+                                {/*    <input*/}
+                                {/*        id={`${task.id}`}*/}
+                                {/*        type='checkbox'*/}
+                                {/*        className={'checkbox'}*/}
+                                {/*        onChange={onChangeRefuseTask}*/}
+                                {/*        checked={task.refuse}*/}
+                                {/*    />Освободить задачу*/}
+                                {/*</div>*/}
+                            </div>
+                        ))}
+                    </fieldset>
+                }
+            </div>
         </div>
     )
 }
