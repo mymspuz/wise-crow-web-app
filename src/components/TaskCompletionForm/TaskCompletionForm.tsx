@@ -199,6 +199,7 @@ const TaskCompletionForm = () => {
                                     <div className="switch-group">
                                         <label className="switch">
                                             <input
+                                                id={`${task.id}`}
                                                 type="checkbox"
                                                 checked={task.refuse}
                                                 onChange={onChangeRefuseTask}
