@@ -94,36 +94,79 @@ const UsersRightsForm = () => {
     }, [])
 
     return (
-        <div className={"form"}>
-            <select value={userId.id} onChange={onChangeUser} className={'select'}>
-                {listUsers.map(user => (
-                    <option key={user.id} value={user.id}>{user.name}</option>
-                ))}
-            </select>
-            <hr/>
-            {userId.id !== 0
-                ?
-                <>
-                    <p>
-                        <input type='checkbox' checked={isAdminChecked()} onChange={onChangeAdmin}/>Сделать Админом
-                    </p>
-                    <p>
-                        <input type='checkbox' checked={isActiveChecked()} onChange={onChangeActive}/>Сделать активным
-                    </p>
-                    <p>
-                        {rights.map(r => (
-                            <p>
-                                <input key={r.id} id={`${r.id}`} type='checkbox' checked={isChecked(r.id)} onChange={onChangeRights}/>{r.stageName}
-                            </p>
-                        ))}
-                    </p>
-                </>
-                :
-                <p>
-                    Выберите пользователя
-                </p>
-            }
-
+        <div className="telegram-container">
+            <div className="form-container">
+                <fieldset className="form-section">
+                    <div className="input-row">
+                        <div className="input-group half">
+                            <label htmlFor="userName">
+                                Выберите пользователя
+                            </label>
+                            <select
+                                id="userName"
+                                value={userId.id}
+                                onChange={onChangeUser}
+                                className={''}
+                            >
+                                {listUsers.map(user => (
+                                    <option key={user.id} value={user.id}>{user.name}</option>
+                                ))}
+                            </select>
+                        </div>
+                    </div>
+                    {userId.id !== 0
+                        ?
+                        <>
+                            <div className="input-group">
+                                <div className="switch-group">
+                                    <label className="switch">
+                                        <input
+                                            type="checkbox"
+                                            id="is-admin"
+                                            checked={isAdminChecked()}
+                                            onChange={onChangeAdmin}
+                                        />
+                                        <span className="slider"></span>
+                                    </label>
+                                    <span>Сделать Админом</span>
+                                </div>
+                                <div className="switch-group">
+                                    <label className="switch">
+                                        <input
+                                            type="checkbox"
+                                            id="is-active"
+                                            checked={isActiveChecked()}
+                                            onChange={onChangeActive}
+                                        />
+                                        <span className="slider"></span>
+                                    </label>
+                                    <span>Сделать активным</span>
+                                </div>
+                            </div>
+                            <div className="input-group">
+                            {rights.map(r => (
+                                <div className="switch-group">
+                                    <label className="switch">
+                                        <input
+                                            type="checkbox"
+                                            id={`stage-${r.stageName}`}
+                                            checked={isChecked(r.id)}
+                                            onChange={onChangeRights}
+                                        />
+                                        <span className="slider"></span>
+                                    </label>
+                                    <span>{r.stageName}</span>
+                                </div>
+                            ))}
+                        </div>
+                        </>
+                        :
+                        <p>
+                            Выберите пользователя
+                        </p>
+                    }
+                </fieldset>
+            </div>
         </div>
     )
 }
